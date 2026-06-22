@@ -1,0 +1,12 @@
+{
+  "schemaVersion" : 1,
+  "generatedAt" : "2026-06-22T03:39:33.883356Z",
+  "project" : {
+    "name" : "cydeo-cucumber-junit-project"
+  },
+  "flows" : [ ],
+  "summary" : {
+    "totalPlans" : 0,
+    "unresolvedPreconditions" : 0
+  }
+}

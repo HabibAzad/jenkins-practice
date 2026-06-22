@@ -1,0 +1,7 @@
+{
+  "schemaVersion" : 4,
+  "project" : {
+    "name" : "cydeo-cucumber-junit-project"
+  },
+  "endpoints" : [ ]
+}

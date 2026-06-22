@@ -1,0 +1,102 @@
+{
+  "schemaVersion" : 1,
+  "analysisFingerprint" : "8ab2ace9c55ed9454d450129364e67d16106f9defd009d7b734a8e512bed55ae",
+  "files" : {
+    "src/test/java/com/cydeo/utilities/ConfigurationReader.java" : {
+      "sha256" : "fdfb96354e91de4bb53dc67c2771989d4d7230893fe3d1874db70c38f7ce637c",
+      "endpoints" : [ ]
+    },
+    "src/test/java/com/cydeo/utilities/Driver.java" : {
+      "sha256" : "80e921f89b46aca16bc4d41460e5ef1389483cb5c90d42599aca351044390806",
+      "endpoints" : [ ]
+    },
+    "src/test/java/com/cydeo/utilities/BrowserUtils.java" : {
+      "sha256" : "d7ed0f135a6d35735789beffd0d7b443603e5044c2febefb5438af1f2e73b2f7",
+      "endpoints" : [ ]
+    },
+    "src/test/java/com/cydeo/step_definitions/Logout_StepDefinitions.java" : {
+      "sha256" : "9e4794fd4a2323a181cbdfff0ba72a907028b02fbff7b1eadc8adc1dc41a9289",
+      "endpoints" : [ ]
+    },
+    "src/test/java/com/cydeo/step_definitions/Hooks.java" : {
+      "sha256" : "7a520fbd5c0891cad4479ca94435902e30b5a3fd358dfc90134ab90b4a1339dd",
+      "endpoints" : [ ]
+    },
+    "src/test/java/com/cydeo/step_definitions/Login_StepDefinitions.java" : {
+      "sha256" : "13c32bdfd734b62406f857b6fb0b7995074e0c63d11e9e326c8f71293a51c41c",
+      "endpoints" : [ ]
+    },
+    "src/test/java/com/cydeo/step_definitions/Google_StepDefinitions.java" : {
+      "sha256" : "2454b7e3c29474c1e1555e2e32200cbd399225545eefd9a89f1ba39117e7aa61",
+      "endpoints" : [ ]
+    },
+    "src/test/java/com/cydeo/step_definitions/Dashboard_StepDefinitions.java" : {
+      "sha256" : "16be61138e34cedce64d3915f1fb1ce9aecd2f99c97c37eab3ff7e461b607771",
+      "endpoints" : [ ]
+    },
+    "src/test/java/com/cydeo/step_definitions/Dropdown_StepDefinitions.java" : {
+      "sha256" : "e93c22ac237fed783911d044b1aebcf46d27f2ff8e4483d20cd4ca1678c8193c",
+      "endpoints" : [ ]
+    },
+    "src/test/java/com/cydeo/runners/CukesRunner.java" : {
+      "sha256" : "d6e88eba7e1421ecf9860342e5df301cf4552212466c8af180791d4899880bc0",
+      "endpoints" : [ ]
+    },
+    "src/test/java/com/cydeo/runners/SmokeRunner.java" : {
+      "sha256" : "63db6b94d176faa751cfa85669a4f308ee85e157f8d57c3f1194337caea39fa1",
+      "endpoints" : [ ]
+    },
+    "src/test/java/com/cydeo/pages/Login.java" : {
+      "sha256" : "18f14fe6e9d5e89d54c19ef3d58024da16062e356550215bd48def0f1317d281",
+      "endpoints" : [ ]
+    },
+    "src/test/java/com/cydeo/pages/Dashboard.java" : {
+      "sha256" : "82bcbf052366967b5e972a070bbfcddd43aed18254162f8f050765e005a945de",
+      "endpoints" : [ ]
+    },
+    "src/test/java/com/cydeo/pages/DropdownPage.java" : {
+      "sha256" : "67106a91acbc53371cdd9e8269ac494ce834abc7adaebd95b52a472bdf06c14f",
+      "endpoints" : [ ]
+    },
+    "qa-tests/src/test/java/com/qacopilot/runner/CucumberTestRunner.java" : {
+      "sha256" : "50054a1823b7664058ea56d69d916325eb86b3288059e4ba2e9f7929b65307b2",
+      "endpoints" : [ ]
+    },
+    "qa-tests/src/test/java/com/qacopilot/support/QaCopilotHtmlReport.java" : {
+      "sha256" : "c4349211987eed35545de9c8edd9301e7e0204dfa7328941fd5d465dcf8b207f",
+      "endpoints" : [ ]
+    },
+    "qa-tests/src/test/java/com/qacopilot/support/ApiTestContext.java" : {
+      "sha256" : "9f7a894b3799247eb226856020bbbce63cc764068f5032ab40427b94a440fe85",
+      "endpoints" : [ ]
+    },
+    "qa-tests/src/test/java/com/qacopilot/support/QaCopilotHtmlReportPlugin.java" : {
+      "sha256" : "6492667f0ce7c7619ecb75f20ed18286742a108d416bf028621effd4c25bd33c",
+      "endpoints" : [ ]
+    },
+    "qa-tests/src/test/java/com/qacopilot/support/RestAssuredClient.java" : {
+      "sha256" : "c809c309202afc171afba5994a6043eec30fe9dca7ec862e1178404934c03a1f",
+      "endpoints" : [ ]
+    },
+    "qa-tests/src/test/java/com/qacopilot/support/GeneratedPayloadFactory.java" : {
+      "sha256" : "825d37cbc01c5322c2c3a4d62fa70e7759d3ec17d43407f30348a25d0e200725",
+      "endpoints" : [ ]
+    },
+    "qa-tests/src/test/java/com/qacopilot/support/ScenarioContextStore.java" : {
+      "sha256" : "e8c940dcc15b014b91e47a767a1c35c4a8ff3dda7e07601da2cbea1ad065b1bc",
+      "endpoints" : [ ]
+    },
+    "qa-tests/src/test/java/com/qacopilot/stepdefs/common/CommonSteps.java" : {
+      "sha256" : "be3662724a78ecb62fe80758ed1cc4ff86cc09165893c327b0ec8c53b90f5cfd",
+      "endpoints" : [ ]
+    },
+    "src/test/java/com/cydeo/step_definitions/EtsyLogin_StepDefinitions.java" : {
+      "sha256" : "8707d3d8763053bf6f5b7c0154651beb2ed227df2cdb86ef14580607b10134f3",
+      "endpoints" : [ ]
+    },
+    "src/test/java/com/cydeo/pages/EtsyLoginPage.java" : {
+      "sha256" : "b32c356fd084acf7420fe1237769d641c9e86f021d90e8e3382725b13b3b54a8",
+      "endpoints" : [ ]
+    }
+  }
+}
