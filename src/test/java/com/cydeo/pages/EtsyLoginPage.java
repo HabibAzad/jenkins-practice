@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.Set;
 
 public class EtsyLoginPage {
 
@@ -21,7 +22,7 @@ public class EtsyLoginPage {
     }
 
     public void clickSignIn() {
-        switchToAvailableWindowIfNeeded();
+        switchToAvailableWindow();
 
         By primaryLocator = By.cssSelector("a[href*='signin'], a[href*='sign_in'], button[data-wt-id='signinHeader']");
         By fallbackLocator = By.xpath("//a[normalize-space()='Sign in'] | //button[normalize-space()='Sign in']");
@@ -29,19 +30,23 @@ public class EtsyLoginPage {
         WebElement signInButton;
         try {
             signInButton = wait.until(ExpectedConditions.elementToBeClickable(primaryLocator));
+        } catch (NoSuchWindowException e) {
+            switchToAvailableWindow();
+            signInButton = wait.until(ExpectedConditions.elementToBeClickable(fallbackLocator));
         } catch (TimeoutException e) {
+            switchToAvailableWindow();
             signInButton = wait.until(ExpectedConditions.elementToBeClickable(fallbackLocator));
         }
         signInButton.click();
     }
 
-    private void switchToAvailableWindowIfNeeded() {
+    private void switchToAvailableWindow() {
         try {
             driver.getTitle();
         } catch (NoSuchWindowException e) {
-            for (String handle : driver.getWindowHandles()) {
-                driver.switchTo().window(handle);
-                break;
+            Set<String> handles = driver.getWindowHandles();
+            if (!handles.isEmpty()) {
+                driver.switchTo().window(handles.iterator().next());
             }
         }
     }

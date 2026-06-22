@@ -34,13 +34,17 @@ public class Driver {
                     chromeOptions.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
                     chromeOptions.setExperimentalOption("useAutomationExtension", false);
                     ChromeDriver chromeDriver = new ChromeDriver(chromeOptions);
-                    chromeDriver.executeCdpCommand("Page.addScriptToEvaluateOnNewDocument", Map.of(
-                        "source",
-                        "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});" +
-                        "Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3, 4, 5]});" +
-                        "Object.defineProperty(navigator, 'languages', {get: () => ['en-US', 'en']});" +
-                        "window.chrome = { runtime: {} };"
-                    ));
+                    try {
+                        chromeDriver.executeCdpCommand("Page.addScriptToEvaluateOnNewDocument", Map.of(
+                            "source",
+                            "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});" +
+                            "Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3, 4, 5]});" +
+                            "Object.defineProperty(navigator, 'languages', {get: () => ['en-US', 'en']});" +
+                            "window.chrome = { runtime: {} };"
+                        ));
+                    } catch (Exception ignored) {
+                        // CDP version mismatch with this Chrome build; anti-detection script skipped
+                    }
                     driver = chromeDriver;
                     break;
                 case "chrome-headless":

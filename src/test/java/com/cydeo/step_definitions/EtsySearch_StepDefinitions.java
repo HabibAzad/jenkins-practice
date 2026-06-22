@@ -19,10 +19,27 @@ public class EtsySearch_StepDefinitions {
         etsySearchPage.searchFor(keyword);
     }
 
-    @Then("I should see a product with title containing {string}")
-    public void i_should_see_a_product_with_title_containing(String expectedTitle) {
+    @Then("I should see results containing {string} in the product title")
+    public void i_should_see_results_containing_in_the_product_title(String expectedTitle) {
         Assert.assertTrue(
                 "No product found with title containing: " + expectedTitle,
                 etsySearchPage.isProductTitleVisible(expectedTitle));
+    }
+
+    @When("I click on the Categories button")
+    public void i_click_on_the_categories_button() {
+        driver = Driver.getDriver();
+        etsySearchPage = new EtsySearchPage(driver);
+        etsySearchPage.clickCategoriesButton();
+    }
+
+    @Then("I should see a list of categories displayed")
+    public void i_should_see_a_list_of_categories_displayed() {
+        Assert.assertTrue("Categories list is not displayed", etsySearchPage.isCategoriesListDisplayed());
+    }
+
+    @Then("I should see the {string} category")
+    public void i_should_see_the_category(String categoryName) {
+        Assert.assertTrue("Category not found: " + categoryName, etsySearchPage.isCategoryVisible(categoryName));
     }
 }

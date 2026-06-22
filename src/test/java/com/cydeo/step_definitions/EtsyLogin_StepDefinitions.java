@@ -15,7 +15,6 @@ public class EtsyLogin_StepDefinitions {
 
     private WebDriver driver;
     private EtsyLoginPage etsyLoginPage;
-
     @Given("I navigate to Etsy homepage")
     public void i_navigate_to_etsy_homepage() {
         driver = Driver.getDriver();
@@ -55,6 +54,12 @@ public class EtsyLogin_StepDefinitions {
         etsyLoginPage.clickSubmitSignIn();
         Assert.assertTrue("Expected to stay on Etsy domain after sign-in attempt",
                 driver.getCurrentUrl().contains("etsy.com"));
+    }
+
+    @When("I enter Etsy username {string} and password {string}")
+    public void i_enter_etsy_username_and_password(String username, String password) {
+        etsyLoginPage.enterEmail(username);
+        etsyLoginPage.enterPassword(password);
     }
 
 

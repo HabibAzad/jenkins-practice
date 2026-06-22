@@ -1,10 +1,11 @@
 Feature: Etsy Search
   As an Etsy user
-  I want to search for products on Etsy
+  I want to see Categories and search for items
   So that I can find items by keyword
 
-  @wip @etsy
-  Scenario: Search for wooden spoon and verify product title
+  @smokeTest
+  Scenario:
     Given I navigate to Etsy homepage
-    When I search for "wooden spoon"
-    Then I should see a product with title containing "Personalized Wooden Spoon"
+    When I click on the Categories button
+    Then I should see a list of categories displayed
+    Then I should see the "Accessories" category
