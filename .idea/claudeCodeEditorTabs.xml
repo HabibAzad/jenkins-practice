@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ClaudeCodeEditorTabs">
-    <option name="activeSessionId" value="a89bcb9a-f21c-4c94-9920-b06b08af2376" />
+    <option name="activeSessionId" value="6df96e95-5b40-4866-a0f8-0bf619886e8d" />
     <option name="openSessionIds">
       <list>
         <option value="a89bcb9a-f21c-4c94-9920-b06b08af2376" />
+        <option value="6df96e95-5b40-4866-a0f8-0bf619886e8d" />
       </list>
     </option>
     <option name="sessionPaths">
       <map>
+        <entry key="6df96e95-5b40-4866-a0f8-0bf619886e8d" value="/sessions/new" />
         <entry key="a89bcb9a-f21c-4c94-9920-b06b08af2376" value="/sessions/4a7d8b6c-ea78-4f06-9899-95afe72277ae" />
       </map>
     </option>
     <option name="sessionTitles">
       <map>
+        <entry key="6df96e95-5b40-4866-a0f8-0bf619886e8d" value="Claude Code" />
         <entry key="a89bcb9a-f21c-4c94-9920-b06b08af2376" value="how can i run just two secnarios in BDD cucumber f" />
       </map>
     </option>
